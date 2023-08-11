@@ -9,13 +9,20 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { EstadosComponent } from './components/estados/estados.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EstadosComponent
   ],
   imports: [
+    MatTableModule,
+    HttpClientModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatIconModule,
